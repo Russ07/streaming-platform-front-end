@@ -1,0 +1,69 @@
+@use "./styles/partials/mixin.scss" as *;
+@use "/.styles/partials/variables.scss" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "AvenirNext-Regular";
+}
+
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("./assets/font/AvenirNextLTPro-Bold.woff2") format("woff2"),
+    url("./assets/font/AvenirNextLTPro-Bold.otf") format("opentype"),
+    url("./assets/font/Alternative/AvenirNextLTProBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("./assets/font/AvenirNextLTPro-Demi.woff2") format("woff2"),
+    url("./assets/font/AvenirNextLTPro-Demi.otf") format("opentype"),
+    url("./assets/font/Alternative/AvenirNextLTProDemi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirNext-Regular";
+  src: url("./assets/font/AvenirNextLTPro-Regular.woff2") format("woff2"),
+    url("./assets/font/AvenirNextLTPro-Regular.otf") format("opentype"),
+    url("./assets/font/Alternative/AvenirNextLTPro.ttf") format("truetype");
+}
+
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+
+  @include tablet {
+    font-size: 3.3rem;
+    line-height: 4.4rem;
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+
+  @include tablet {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+
+  @include tablet {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+  }
+}
