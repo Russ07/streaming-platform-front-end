@@ -3,7 +3,7 @@ import './Video.scss';
 function Hero() {
     return(
         <>
-        <video className='video'></video>
+        <video className='video' controls></video>
         </>
     );
 }
