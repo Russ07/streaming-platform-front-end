@@ -121,4 +121,15 @@
         flex-grow: 0.9;
     }
   }
+  @include desktop{
+    justify-content: space-between;
+    padding-left: 6.3rem;
+    padding-right: 6.3rem;
+    &__link{
+        padding: 0;
+    }
+    &__menu-container{
+        width: 50%;
+    }
+  }
 }
