@@ -9,7 +9,9 @@ function App() {
     <>
   <Header />
   <Hero />
-  <VideoDescription/>  
+  <div className='description-comments-wrapper'>
+  <VideoDescription/>
+  </div>  
     </>
   );
 }
