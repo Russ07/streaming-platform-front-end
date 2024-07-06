@@ -19,20 +19,20 @@ function VideoDescription() {
               <img className="description__icon" src={viewIcon} /> 980.544
             </p>
             <p className="description__like-counter">
-              <img className="description__icon" src={likeIcon} />
+              <img className="description__icon description__icon-like" src={likeIcon} />
               22.479
             </p>
           </div>
-          <p className="description__text">
-            Explore the cutting-edge developments and predictions for Artificial
-            Intelligence in the coming years. From revolutionary breakthroughs
-            in machine learning to the ethical considerations influencing AI
-            advancements, this exploration transcends the boundaries of mere
-            speculation. Join us on a journey that navigates the intricate
-            interplay between innovation, ethics, and the ever-evolving tech
-            frontier.
-          </p>
         </div>
+        <p className="description__text">
+          Explore the cutting-edge developments and predictions for Artificial
+          Intelligence in the coming years. From revolutionary breakthroughs in
+          machine learning to the ethical considerations influencing AI
+          advancements, this exploration transcends the boundaries of mere
+          speculation. Join us on a journey that navigates the intricate
+          interplay between innovation, ethics, and the ever-evolving tech
+          frontier.
+        </p>
       </div>
     </>
   );
