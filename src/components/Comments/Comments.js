@@ -3,8 +3,17 @@ import avatar from "../../assets/images/Mohan-muruge.jpg";
 import buttonComment from "../../assets/icons/add_comment.svg";
 import CommentElement from "../CommentElement/CommentElement";
 import data from "../../data/video-details.json";
+import { useState } from 'react';
+import SimpleDateTime  from 'react-simple-timestamp-to-date';
 
 function Comments() {
+  const try1 = {data};
+  const try2 = try1.data[0].comments;
+  console.log(try2);
+  const [element, setElement] = useState(
+    try2
+
+  );
   return (
     <>
     <h2 className="comment__comments-count">3 Comments</h2>
@@ -21,7 +30,7 @@ function Comments() {
       </form>
       </div>
       <section className="comment__list">
-            {data.map((content, index) => (
+            {element.map((content, index) => (
                 <CommentElement
                     key={index} 
                     name={content.name} 
