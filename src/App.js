@@ -5,6 +5,7 @@ import Header from './components/Header/Header.js';
 import Hero from './components/Video/Video.js';
 import VideoDescription from './components/VideoDescription/VideoDescription.js';
 import Comments from './components/Comments/Comments.js';
+import VideoElement from './components/VideoElement/VideoElement.js';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
   <div className='description-comments-wrapper'>
   <VideoDescription/>
   <Comments/>
+  <VideoElement/>
   </div>  
     </>
   );
