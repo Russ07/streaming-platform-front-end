@@ -8,7 +8,7 @@ function VideoElement() {
     console.log(arrayData[0]);
     return (
       <>
-        <section className="card-list">
+        {/* <section className="card-list">
             {cardContent.map((content, index) => (
                 <Card 
                     key={index} 
@@ -16,7 +16,7 @@ function VideoElement() {
                     content={content.content}
                 />
             ))}
-        </section>
+        </section> */}
       </>
     );
   }
