@@ -4,6 +4,7 @@ import "./App.scss"
 import Header from './components/Header/Header.js';
 import Hero from './components/Video/Video.js';
 import VideoDescription from './components/VideoDescription/VideoDescription.js';
+import Comments from './components/Comments/Comments.js';
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
   <Hero />
   <div className='description-comments-wrapper'>
   <VideoDescription/>
+  <Comments/>
   </div>  
     </>
   );
