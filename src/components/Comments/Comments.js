@@ -1,6 +1,8 @@
 import "./Comments.scss";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import buttonComment from "../../assets/icons/add_comment.svg";
+import CommentElement from "../CommentElement/CommentElement";
+import data from "../../data/video-details.json";
 
 function Comments() {
   return (
@@ -18,7 +20,16 @@ function Comments() {
         </div>
       </form>
       </div>
-      
+      <section className="comment__list">
+            {data.map((content, index) => (
+                <CommentElement
+                    key={index} 
+                    name={content.name} 
+                    comment={content.comment}
+                    timestamp={content.timestamp}
+                />
+            ))}
+        </section>
     </>
   );
 }

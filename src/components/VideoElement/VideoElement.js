@@ -1,11 +1,9 @@
 import "./VideoElement.scss";
 import data from '../../data/video-details.json';
 
-console.log({data});
+
 
 function VideoElement() {
-    const arrayData = {data};
-    console.log(arrayData[0]);
     return (
       <>
         {/* <section className="card-list">
