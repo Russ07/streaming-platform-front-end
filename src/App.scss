@@ -67,3 +67,19 @@ h3 {
     font-weight: 400;
   }
 }
+
+.description-comments-wrapper{
+  @include desktop{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+    &__style-block{
+      width: 60%;
+    }
+    &__style-video{
+      width: 40%;
+    }
+  }
+
+}

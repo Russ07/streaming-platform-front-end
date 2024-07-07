@@ -1,0 +1,40 @@
+@use "../../styles/partials/mixin.scss" as *;
+@use "../../styles/partials/varibles.scss" as *;
+
+.video-element{
+    display: flex;
+    flex-direction: row;
+    // width: auto;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    &__image{
+        width: 30%;
+        border-radius: 0.4rem;
+    }
+    &__style-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 2.4rem;
+    }
+    @include tablet{
+        padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+        &__image{
+            width: 20%;
+            border-radius: 0.4rem;
+        }
+        &__style-container{
+            width: 30%;
+        }
+        &__heading{
+            font-size: 1.6rem;
+        }
+    }
+    @include desktop{
+        &__style-container{
+            width: auto;
+        }
+        &__image{
+            width: 30%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use "../../styles/partials/mixin.scss" as *;
+@use "../../styles/partials/varibles.scss" as *;
+
+.video-list{
+    &__heading{
+        font-size: 2rem;
+        padding: 1.6rem;
+        padding-top: 2.4rem;
+        color: $primary-color-silver;
+    }
+    @include tablet{
+        &__heading{
+            font-size: 1.6rem;
+        }
+    }
+}
