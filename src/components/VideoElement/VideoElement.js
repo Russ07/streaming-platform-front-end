@@ -1,12 +1,11 @@
 import "./VideoElement.scss";
 import data from '../../data/video-details.json';
 
-
-
 function VideoElement(props) {
     return (
       <>
-        <div className="video-element" id={props.identifier} onClick={() => {props.getId(props.identifier)}}>
+        {/* <div className="video-element" id={props.identifier} onClick={() => {props.getId(props.identifier)}}> */}
+        <div className="video-element" id={props.identifier} >
       <img className="video-element__image" src={props.img}/>
       <div className="video-element__style-container">
         <h2 className="video-element__heading">{props.title}</h2>
