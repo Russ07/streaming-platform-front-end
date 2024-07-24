@@ -2,13 +2,13 @@ import "./Comments.scss";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import buttonComment from "../../assets/icons/add_comment.svg";
 import CommentElement from "../CommentElement/CommentElement";
-import data from "../../data/video-details.json";
+
 import { useState } from 'react';
 
 function Comments(props) {
   return (
     <>
-    <h2 className="comment__comments-count"> {props.currentVideo.comments.length} Comments</h2>
+    <h2 className="comment__comments-count"> {props.currentVideo.comments} Comments</h2>
     <div className="comment__form-container">
         <img className="comment__avatar-img" src={avatar} alt="avatar"/>
       <form id="commentForm" className="comment__form-wrapper" action="" method="post">

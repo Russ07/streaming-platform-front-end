@@ -70,7 +70,7 @@ useEffect(() => {
       <div className="description-comments-wrapper">
         <div className="description-comments-wrapper__style-block">
           <VideoDescription currentVideo={currentVideo} />
-          {/* <Comments currentVideo={currentVideo} /> */}
+          <Comments currentVideo={currentVideo} /> 
         </div>
         <span className="description-comments-wrapper__style-video">
           <VideoList
