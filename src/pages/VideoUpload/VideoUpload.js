@@ -1,9 +1,9 @@
-
+import "./VideoUpload.scss";
 
 function VideoUpload() {
     return (
       <>
-      
+
       </>
     );
   }
