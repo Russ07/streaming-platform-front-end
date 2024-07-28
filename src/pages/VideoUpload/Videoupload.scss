@@ -1,0 +1,80 @@
+@use "../../styles/partials/mixin.scss" as *;
+@use "../../styles/partials/varibles.scss" as *;
+
+.video-upload{
+padding-left: 1.6rem;
+padding-right: 1.6rem;
+&__thumbnail-container{
+    padding: 2.4rem 0 2.4rem 0;
+}
+&__thumbnail-heading{
+    padding-bottom: 1.6rem;
+    color: $secondary-color-mercury;
+}
+&__thumbnail-img{
+    background-color: $secondary-color-mercury;
+    width: 100%;
+}
+&__form-container{
+    display: flex;
+    flex-direction: column;
+}
+&__label{
+    color: $secondary-color-mercury;
+    padding-bottom: 1.6rem;
+}
+&__input{
+    height: 3.6rem;
+    border-radius:0.4rem ;
+    border: 0.1rem $secondary-color-mercury solid;
+    margin-bottom: 2.4rem;
+    padding-left: 1.6rem;
+}
+&__description{
+    height: 7.4rem;
+    border-radius:0.4rem ;
+    border: 0.1rem $secondary-color-mercury solid;
+    margin-bottom: 2.4rem;
+    padding-left: 1.6rem;
+    padding-top: 1.6rem;
+}
+&__button-upload{
+    background-color: $primary-color-blue;
+    color: $primary-color-white;
+    width: 100%;
+    height: 3.6rem;
+    border-radius: 0.5rem;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2.4rem;
+}
+&__button-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+&__button-text{
+    flex-grow: 0.978;
+}
+&__button-cancel{
+    color: $primary-color-blue;
+    background-color: $primary-color-white;
+    width: 100%;
+    height: 3.6rem;
+    border-radius: 0.5rem;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+}
+}

@@ -11,14 +11,14 @@ function VideoUpload() {
         </div>
         <form className="video-upload__form-container">
             <label className="video-upload__label">TITLE YOUR VIDEO</label>
-            <input type="text" className="video-upload__input-field" placeholder="Add a title to your video" required/>
+            <input type="text" className="video-upload__input" placeholder="Add a title to your video" required/>
             <label className="video-upload__label">ADD A VIDEO DESCRIPTION</label>
             <textarea className="video-upload__description" placeholder="Add a description to your video"></textarea>
         </form>
         <div className="video-upload__button-container">
           <button className="video-upload__button-upload">
           <img className="video-upload__button-icon" src={buttonIcon} />
-          <span className="video-upload__button-text">UPLOAD</span>
+          <span className="video-upload__button-text">PUBLISH</span>
           </button>
           <button className="video-upload__button-cancel">CANCEL</button>
         </div>
