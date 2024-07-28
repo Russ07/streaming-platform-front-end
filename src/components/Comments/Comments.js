@@ -17,7 +17,7 @@ function Comments(props) {
           <textarea className="comment__form-textarea" placeholder="Add a new comment" id="comment" name="comment" required=""></textarea>
         </div>
         <div className=" comment__button-wrapper">
-        <button id="eventButton" className="comment__button" type="submit"> <img src={buttonComment}/><span className="comment__button-text">COMMENT</span></button>
+        <button id="eventButton" className="comment__button button-hover" type="submit"> <img src={buttonComment}/><span className="comment__button-text">COMMENT</span></button>
         </div>
       </form>
       </div>

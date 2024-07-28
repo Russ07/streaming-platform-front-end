@@ -18,7 +18,7 @@ function VideoUpload() {
         </form>
         </span>
         <div className="video-upload__button-container">
-          <button className="video-upload__button-upload">
+          <button className="video-upload__button-upload button-hover">
           <img className="video-upload__button-icon" src={buttonIcon} />
           <span className="video-upload__button-text">PUBLISH</span>
           </button>

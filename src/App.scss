@@ -68,6 +68,10 @@ h3 {
   }
 }
 
+.button-hover:hover{
+  background-color: $secondary-color-darkblue;
+}
+
 .description-comments-wrapper{
   @include desktop{
     display: flex;

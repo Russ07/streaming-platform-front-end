@@ -23,7 +23,7 @@ function Header() {
           />
           <img className="header__profile-img-mobile" src={profileImg} />
         </div>
-          <button className="header__button header__button-mobile" onClick={navigationHome}>
+          <button className="header__button header__button-mobil button-hover" onClick={navigationHome}>
             <img
               className="header__button-icon header__button-icon-mobile"
               src={buttonIcon}
@@ -39,7 +39,7 @@ function Header() {
           placeholder="&#xf002;  Search"
         />
         <button
-          className="header__button header__button"
+          className="header__button header__button button-hover"
           onClick={navigationHome}
         >
           <img className="header__button-icon" src={buttonIcon} />
