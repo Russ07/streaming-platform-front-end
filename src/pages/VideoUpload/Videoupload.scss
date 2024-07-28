@@ -22,6 +22,7 @@ padding-right: 1.6rem;
 &__label{
     color: $secondary-color-mercury;
     padding-bottom: 1.6rem;
+    
 }
 &__input{
     height: 3.6rem;
@@ -29,6 +30,7 @@ padding-right: 1.6rem;
     border: 0.1rem $secondary-color-mercury solid;
     margin-bottom: 2.4rem;
     padding-left: 1.6rem;
+    background-color: $secondary-color-alabaster;
 }
 &__description{
     height: 7.4rem;
@@ -37,6 +39,7 @@ padding-right: 1.6rem;
     margin-bottom: 2.4rem;
     padding-left: 1.6rem;
     padding-top: 1.6rem;
+    background-color: $secondary-color-alabaster;
 }
 &__button-upload{
     background-color: $primary-color-blue;
@@ -77,4 +80,73 @@ padding-right: 1.6rem;
     justify-content: center;
     margin-bottom: 2.4rem;
 }
+@include tablet {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+
+&__heading{
+    padding-bottom: 2.4rem;
+    border-bottom: 0.1rem $secondary-color-mercury solid;
+}
+&__thumbnail-img{
+    width: 50%;
+}
+&__button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-left: 50%;
+}
+&__button-upload{
+    order: 2;
+}
+&__button-cancel{
+    order: 1;
+}
+}
+@include desktop{
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+    &__thumbnail-form-wrapper{
+        display: flex;
+        justify-content: left;
+        align-items:flex-start;
+        height: 23rem;
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem;
+    }
+    &__form-container{
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &__thumbnail-container{
+        width: 40%;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        padding-right: 2.4rem;
+    }
+    &__thumbnail-img{
+        width: 100%;
+        height: 100%;
+    }
+    &__label{
+        padding-bottom: 2.4rem;
+        line-height: 2.2rem;
+    }
+    &__thumbnail-heading{
+        padding-bottom: 2.4rem;
+    }
+    &__description{
+        margin-bottom: 0;
+        height: 7.4rem;
+    }
+    &__button-container{
+        padding-left: 70%;
+    }
+}
+
 }
