@@ -23,13 +23,16 @@ function Header() {
           />
           <img className="header__profile-img-mobile" src={profileImg} />
         </div>
-          <button className="header__button header__button-mobil button-hover" onClick={navigationHome}>
-            <img
-              className="header__button-icon header__button-icon-mobile"
-              src={buttonIcon}
-            />
-            UPLOAD
-          </button>
+        <button
+          className="header__button header__button-mobile button-hover"
+          onClick={navigationHome}
+        >
+          <img
+            className="header__button-icon header__button-icon-mobile"
+            src={buttonIcon}
+          />
+          UPLOAD
+        </button>
       </div>
 
       <div className="header__menu-container">

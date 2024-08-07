@@ -8,52 +8,50 @@ import listData from "../../data/video-details.json";
 import { useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import axios from "axios";
+
 function HomePage() {
   const apiKey = "d8647fc6-6c8d-475f-8250-0d0cda5d1dae";
   const [currentVideo, setCurrentVideo] = useState([]);
   const [currentVideoComment, setCurrentVideoComment] = useState([]);
-  const [fetchedVideoList, setFetchedVideoList] = useState([]); 
+  const [fetchedVideoList, setFetchedVideoList] = useState([]);
   const [myId, setmyId] = useState("");
   const { videoId } = useParams();
-useEffect(() => {
-
-
-        
+  useEffect(() => {
     const fetchVideoList = async () => {
       try {
         const getResponse = await axios.get(
           `https://unit-3-project-api-0a5620414506.herokuapp.com/videos?api_key=${apiKey}`
         );
         setFetchedVideoList(getResponse.data);
-        if(getResponse.data)
-        {setmyId(getResponse.data[0].id)}
-        return getResponse
+        if (getResponse.data) {
+          setmyId(getResponse.data[0].id);
+        }
+        return getResponse;
       } catch (error) {
         console.log(error);
       }
-      
     };
     fetchVideoList();
   }, []);
 
   useEffect(() => {
-    if(myId || videoId) {
-        const currentId = videoId || myId
-        
-    const fetchVideoDataFirst = async () => {
-      try {
-        const getResponseFirst = await axios.get(
-          `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${currentId}?api_key=${apiKey}`
-        );
-        console.log(getResponseFirst.data);
-        setCurrentVideo(getResponseFirst.data)
-        setCurrentVideoComment(getResponseFirst.data.comments)
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchVideoDataFirst();
-}
+    if (myId || videoId) {
+      const currentId = videoId || myId;
+
+      const fetchVideoDataFirst = async () => {
+        try {
+          const getResponseFirst = await axios.get(
+            `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${currentId}?api_key=${apiKey}`
+          );
+          console.log(getResponseFirst.data);
+          setCurrentVideo(getResponseFirst.data);
+          setCurrentVideoComment(getResponseFirst.data.comments);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      fetchVideoDataFirst();
+    }
   }, [myId, videoId]);
 
   const suggestedVideos = fetchedVideoList.filter(
@@ -65,14 +63,13 @@ useEffect(() => {
       <Hero currentVideo={currentVideo} />
       <div className="description-comments-wrapper">
         <div className="description-comments-wrapper__style-block">
-        {currentVideo && <VideoDescription currentVideo={currentVideo} />}
-        {currentVideoComment && <Comments currentVideo={currentVideoComment} />}
+          {currentVideo && <VideoDescription currentVideo={currentVideo} />}
+          {currentVideoComment && (
+            <Comments currentVideo={currentVideoComment} />
+          )}
         </div>
         <span className="description-comments-wrapper__style-video">
-          <VideoList
-            dataList={suggestedVideos}
-            currentVideo={currentVideo}
-          />
+          <VideoList dataList={suggestedVideos} currentVideo={currentVideo} />
         </span>
       </div>
     </>

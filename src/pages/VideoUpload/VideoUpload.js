@@ -1,4 +1,4 @@
-import "./VideoUpload.scss";
+import "./Videoupload.scss";
 import thumbnailImg from "../../assets/images/Upload-video-preview.jpg"
 import buttonIcon from "../../assets/icons/upload.svg"
 function VideoUpload() {
