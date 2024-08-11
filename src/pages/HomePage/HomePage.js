@@ -20,7 +20,7 @@ function HomePage() {
     const fetchVideoList = async () => {
       try {
         const getResponse = await axios.get(
-          `https://unit-3-project-api-0a5620414506.herokuapp.com/videos?api_key=${apiKey}`
+          `http://localhost:8080/videos`
         );
         setFetchedVideoList(getResponse.data);
         if (getResponse.data) {
@@ -41,7 +41,7 @@ function HomePage() {
       const fetchVideoDataFirst = async () => {
         try {
           const getResponseFirst = await axios.get(
-            `https://unit-3-project-api-0a5620414506.herokuapp.com/videos/${currentId}?api_key=${apiKey}`
+            `http://localhost:8080/videos/${currentId}`
           );
           console.log(getResponseFirst.data);
           setCurrentVideo(getResponseFirst.data);
